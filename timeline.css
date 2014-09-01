@@ -58,7 +58,7 @@
 }
 
 .interval {
-    fill: #AAFFFF;
+    fill: #5ae;
     stroke-width: 6;
     cursor : default;
     pointer-events: true;
@@ -78,7 +78,7 @@
 }
 
 .intervalLabel {
-    fill : black;
+    fill : #fff;
     font: 10px sans-serif;
     shape-rendering: crispEdges;
 }

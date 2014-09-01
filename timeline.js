@@ -1,17 +1,19 @@
 //  A timeline component for d3
 //  version v0.1
 
-function timeline(domElement) {
+function timeline(domElement, options) {
 
     //--------------------------------------------------------------------------
     //
     // chart
     //
-
+    if (options === undefined) {
+        options = {};
+    }
     // chart geometry
     var margin = {top: 20, right: 20, bottom: 20, left: 20},
-        outerWidth = 960,
-        outerHeight = 500,
+        outerWidth = options.width === undefined ? 960 : options.width,
+        outerHeight = options.height === undefined ? 500: options.height,
         width = outerWidth - margin.left - margin.right,
         height = outerHeight - margin.top - margin.bottom;
 

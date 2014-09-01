@@ -85,10 +85,10 @@
     // Read in the data and construct the timeline
     d3.csv(sourceFile, function(dataset) {
 
-        timeline(domElement)
+        timeline(domElement, {width: 1600, height: 800})
             .data(dataset)
+            .band("naviBand", 0.15)
             .band("mainBand", 0.82)
-            .band("naviBand", 0.08)
             .xAxis("mainBand")
             .tooltips("mainBand")
             .xAxis("naviBand")
